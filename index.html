@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Find your next favorite read at Book shop, an independent online bookshop." />
+    <title>Book shop | An Independent Bookshop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="bookstore homepage">
+    <header class="site-header">
+      <div class="container book-nav">
+        <a href="index.html" class="book-brand" aria-label="Book shop home">
+          <span class="book-brand-icon" aria-hidden="true">B</span>
+          <span>Book shop</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="products.html">Products</a>
+          <a href="team.html">Team</a>
+          
+          <a href="feedback.html">Feedback</a>
+        </nav>
+
+        <div class="book-nav-actions">
+          <a class="account-link" href="login.html" hidden>Account</a>
+          <a class="bag-link" href="login.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home page: introduces the bookshop and highlights books and site sections. -->
+      <section class="book-hero">
+        <div class="container book-hero-grid">
+          <div class="book-hero-copy">
+            <p class="book-eyebrow"><span aria-hidden="true">✳</span> Your friendly neighborhood book shop</p>
+            <h1>Find a book.<br />Find a whole new world.</h1>
+            <p class="book-hero-description">
+              From page-turning fiction to thoughtful reads, discover your next
+              favorite story on our shelves.
+            </p>
+            <a class="book-button" href="#books">Browse the books <span aria-hidden="true">→</span></a>
+            <p class="book-note">Good stories, picked with care.</p>
+          </div>
+          <div class="book-hero-art">
+            <div class="hero-glow"></div>
+            <div class="hero-image-collage">
+              <img class="hero-image-primary" src="https://i.pinimg.com/1200x/fa/93/c2/fa93c294f1cb3a917bf20fecd8a6cf37.jpg" alt="A book selected for the Book shop homepage" fetchpriority="high" />
+              <img class="hero-image-secondary" src="https://i.pinimg.com/736x/53/72/ff/5372ffc546d22ebdbb5b90d64f08dcde.jpg" alt="Don't Disappoint Your Future book cover" />
+            </div>
+            <p class="art-caption">Pick a story.<br />See where it takes you.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="browse-moods" id="categories" aria-labelledby="mood-heading">
+        <div class="container">
+          <p class="book-eyebrow">A good place to start</p>
+          <h2 id="mood-heading">What are you in the mood for?</h2>
+          <p class="browse-moods-intro">Pick a shelf and we’ll help you find a story worth staying up for.</p>
+          <div class="mood-pills">
+            <a href="#books" data-mood="fiction"><span aria-hidden="true">✦</span> Fiction</a>
+            <a href="#books" data-mood="nonfiction"><span aria-hidden="true">❋</span> Non-fiction</a>
+            <a href="#books" data-mood="poetry"><span aria-hidden="true">❧</span> Poetry</a>
+            <a href="products.html"><span aria-hidden="true">⌕</span> All books</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-section" id="books">
+        <div class="container">
+          <div class="book-section-heading">
+            <div>
+              <p class="book-eyebrow">Handpicked for you</p>
+              <h2>Your happy readings</h2>
+            </div>
+            <label class="book-search home-book-search">
+              <span class="visually-hidden">Search books</span>
+              <span aria-hidden="true">⌕</span>
+              <input id="book-search" type="search" placeholder="Find a book or author" autocomplete="off" />
+            </label>
+          </div>
+
+          <div class="book-filters" aria-label="Filter books by genre">
+            <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">All books</button>
+            <button class="filter-chip" type="button" data-filter="fiction" aria-pressed="false">Fiction</button>
+            <button class="filter-chip" type="button" data-filter="nonfiction" aria-pressed="false">Non-fiction</button>
+            <button class="filter-chip" type="button" data-filter="poetry" aria-pressed="false">Poetry</button>
+          </div>
+
+          <p class="book-results" id="book-results" aria-live="polite"></p>
+          <div class="book-grid">
+            <article class="book-card" data-category="fiction" data-search="the midnight library matt haig fiction fantasy">
+              <div class="book-cover cover-midnight">
+                <span class="cover-stars" aria-hidden="true">✦ &nbsp; · ✦</span>
+                <span class="cover-title">The<br />Midnight<br />Library</span>
+                <span class="cover-author">MATT HAIG</span>
+              </div>
+              <div class="book-info">
+                <p class="book-genre">Fiction · Book club favorite</p>
+                <h3>The Midnight Library</h3>
+                <p class="book-byline">by Matt Haig</p>
+                <div class="book-buy-row"><strong>$18.00</strong><button class="add-book" type="button" data-book="The Midnight Library">Add to bag <span aria-hidden="true">+</span></button></div>
+              </div>
+            </article>
+
+            <article class="book-card" data-category="nonfiction" data-search="braiding sweetgrass robin wall kimmerer nature science">
+              <div class="book-cover cover-sweetgrass">
+                <span class="cover-ornament" aria-hidden="true">❋</span>
+                <span class="cover-title">Braiding<br />Sweetgrass</span>
+                <span class="cover-subtitle">INDIGENOUS WISDOM,<br />SCIENTIFIC KNOWLEDGE</span>
+                <span class="cover-author">ROBIN WALL KIMMERER</span>
+              </div>
+              <div class="book-info">
+                <p class="book-genre">Non-fiction · Nature</p>
+                <h3>Braiding Sweetgrass</h3>
+                <p class="book-byline">by Robin Wall Kimmerer</p>
+                <div class="book-buy-row"><strong>$20.00</strong><button class="add-book" type="button" data-book="Braiding Sweetgrass">Add to bag <span aria-hidden="true">+</span></button></div>
+              </div>
+            </article>
+
+            <article class="book-card" data-category="fiction" data-search="tomorrow and tomorrow and tomorrow gabrielle zevin friendship games">
+              <div class="book-cover cover-tomorrow">
+                <span class="cover-title">Tomorrow,<br />and Tomorrow,<br />and Tomorrow</span>
+                <span class="cover-author">GABRIELLE ZEVIN</span>
+              </div>
+              <div class="book-info">
+                <p class="book-genre">Fiction · Modern classic</p>
+                <h3>Tomorrow, and Tomorrow, and Tomorrow</h3>
+                <p class="book-byline">by Gabrielle Zevin</p>
+                <div class="book-buy-row"><strong>$19.00</strong><button class="add-book" type="button" data-book="Tomorrow, and Tomorrow, and Tomorrow">Add to bag <span aria-hidden="true">+</span></button></div>
+              </div>
+            </article>
+
+            <article class="book-card" data-category="poetry" data-search="devotions mary oliver poetry nature">
+              <div class="book-cover cover-devotions">
+                <span class="cover-leaf" aria-hidden="true">❧</span>
+                <span class="cover-title">Devotions</span>
+                <span class="cover-subtitle">THE SELECTED POEMS<br />OF MARY OLIVER</span>
+                <span class="cover-author">MARY OLIVER</span>
+              </div>
+              <div class="book-info">
+                <p class="book-genre">Poetry · A book to keep</p>
+                <h3>Devotions</h3>
+                <p class="book-byline">by Mary Oliver</p>
+                <div class="book-buy-row"><strong>$24.00</strong><button class="add-book" type="button" data-book="Devotions">Add to bag <span aria-hidden="true">+</span></button></div>
+              </div>
+            </article>
+          </div>
+          <p class="no-books" id="no-books" hidden>No books found. Try a different title or genre.</p>
+        </div>
+      </section>
+
+      <section class="reading-notes" aria-labelledby="reading-notes-heading">
+        <div class="container">
+          <div class="reading-notes-heading">
+            <p class="book-eyebrow">A little bookish inspiration</p>
+            <h2 id="reading-notes-heading">Make room for good stories.</h2>
+          </div>
+          <div class="reading-note-grid">
+            <a class="reading-note reading-note-green" href="blog.html">
+              <span class="reading-note-icon" aria-hidden="true">✿</span>
+              <span class="reading-note-label">A reader’s guide</span>
+              <strong>Find a story that feels like you.</strong>
+              <span class="reading-note-link">Read the journal <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="reading-note reading-note-coral" href="services.html">
+              <span class="reading-note-icon" aria-hidden="true">✦</span>
+              <span class="reading-note-label">A little bookshop magic</span>
+              <strong>Thoughtful gifts, wrapped with love.</strong>
+              <span class="reading-note-link">Explore bookshop extras <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="reading-note reading-note-blue" href="team.html">
+              <span class="reading-note-icon" aria-hidden="true">❋</span>
+              <span class="reading-note-label">From our booksellers</span>
+              <strong>Good recommendations start with a hello.</strong>
+              <span class="reading-note-link">Meet the team <b aria-hidden="true">↗</b></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-about" id="about">
+        <div class="container about-inner">
+          <span class="about-sparkle" aria-hidden="true">✳</span>
+          <p class="book-eyebrow">Stories bring us together</p>
+          <h2>There’s always room for one more good book.</h2>
+          <p>We’re an independent bookshop for curious minds, thoughtful gifts, and readers of every kind. Come for a browse and leave with a story.</p>
+          <a href="about.html" class="about-link">A little about us <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="book-newsletter" aria-labelledby="newsletter-heading">
+        <div class="container newsletter-layout">
+          <div class="newsletter-copy">
+            <p class="book-eyebrow">A little note from the bookshop</p>
+            <h2 id="newsletter-heading">More stories.<br />More happy reading.</h2>
+            <p>Get bookish news, fresh recommendations, and notes from our shelves.</p>
+          </div>
+          <form class="newsletter-form">
+            <label for="newsletter-email">Your email address</label>
+            <div class="newsletter-input-row">
+              <input id="newsletter-email" name="email" type="email" placeholder="you@example.com" required />
+              <button type="submit" aria-label="Join the bookshop newsletter">Join <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="newsletter-status" aria-live="polite"></p>
+            <p class="newsletter-disclaimer">Demo only — your email is not sent or stored.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="book-footer">
+      <div class="container book-footer-inner">
+        <a href="index.html" class="book-brand"><span class="book-brand-icon">B</span><span>Book shop</span></a>
+        <p>Find a story. Make a day of it.</p>
+        <nav class="book-footer-nav" aria-label="Explore the bookshop">
+          <a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="gallery.html">Gallery</a><a href="products.html">Products</a><a href="blog.html">Blog</a><a href="team.html">Team</a><a href="feedback.html">Feedback</a><a href="login.html">Login</a>
+        </nav>
+        <span>© <span id="year"></span> Book shop</span>
+      </div>
+    </footer>
+  </body>
+</html>

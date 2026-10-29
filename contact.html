@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit the Bookshop | Book shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="bookstore auth-required">
+    <header class="site-header"><div class="container book-nav">
+      <a href="index.html" class="book-brand" aria-label="Book shop home"><span class="book-brand-icon">B</span><span>Book shop</span></a>
+      <a class="back-home" href="index.html" aria-label="Go back to the bookshop homepage"><span aria-hidden="true">←</span><span class="back-home-label">Back</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html" aria-current="page">Contact</a><a href="gallery.html">Gallery</a><a href="products.html">Products</a><a href="blog.html">Blog</a><a href="team.html">Team</a><a href="feedback.html">Feedback</a></nav>
+      <div class="book-nav-actions"><a class="account-link" href="login.html" hidden>Account</a><a class="bag-link" href="login.html">Login</a></div>
+    </div></header>
+    <!-- Contact page: shows sample shop contact details and a validated message form. -->
+    <main class="shop-page">
+      <section class="shop-page-hero"><p class="book-eyebrow">We’d love to hear from you</p><h1>Come say hello.</h1><p>Ask us for a book recommendation, a gift idea, or just tell us what you’re reading. There’s always room for a bookish chat.</p></section>
+      <section class="shop-content shop-contact-grid">
+        <div class="shop-story-card"><p class="book-eyebrow">Find your book people</p><h2>Book shop</h2><p>Email: hello@bookshop.example</p><p>Phone: +1 (415) 555-0132</p><p>Independent bookshop · Open for readers, wherever they are</p><p class="shop-small-note">These are sample contact details for this demo site.</p></div>
+        <div class="shop-story-card"><h2>Send us a note</h2><form class="contact-form">
+          <label><span>Your name</span><input class="input" type="text" placeholder="Your name" required /></label>
+          <label><span>Email</span><input class="input" type="email" placeholder="you@example.com" required /></label>
+          <label><span>What’s on your mind?</span><textarea class="textarea" placeholder="A recommendation, a gift, or a bookish hello..." required></textarea></label>
+          <button class="book-button" type="submit">Send a note <span aria-hidden="true">→</span></button>
+          <p class="form-status shop-small-note" aria-live="polite"></p>
+        </form></div>
+      </section>
+    </main>
+    <footer class="book-footer"><div class="container book-footer-inner"><a href="index.html" class="book-brand"><span class="book-brand-icon">B</span><span>Book shop</span></a><p>Find a story. Make a day of it.</p><nav class="book-footer-nav" aria-label="Explore the bookshop"><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="gallery.html">Gallery</a><a href="products.html">Products</a><a href="blog.html">Blog</a><a href="team.html">Team</a><a href="feedback.html">Feedback</a><a href="login.html">Login</a></nav><span>© <span id="year"></span> Book shop</span></div></footer>
+  </body>
+</html>

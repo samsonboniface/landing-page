@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img">
+  <rect width="640" height="420" fill="#e8e9dc"/>
+  <circle cx="500" cy="90" r="52" fill="#e8c89f"/>
+  <rect x="68" y="286" width="504" height="20" rx="3" fill="#8d674a"/>
+  <rect x="91" y="151" width="84" height="135" rx="5" fill="#49624b"/>
+  <rect x="182" y="126" width="92" height="160" rx="5" fill="#bf7658"/>
+  <rect x="280" y="169" width="74" height="117" rx="5" fill="#d3a855"/>
+  <rect x="360" y="137" width="91" height="149" rx="5" fill="#435b68"/>
+  <rect x="458" y="157" width="77" height="129" rx="5" fill="#9a765c"/>
+  <path d="M111 183h44M111 198h44M203 161h51M203 176h51M377 171h55M377 187h55" stroke="#f7edcf" stroke-width="4" opacity=".8"/>
+  <path d="M128 286c-4-38 4-64 25-83m-11 38c-20-4-31-16-37-35m39 20c17-8 26-21 29-39" fill="none" stroke="#d7ddce" stroke-width="5" stroke-linecap="round"/>
+  <path d="M77 306h486v15H77z" fill="#70513a"/>
+  <text x="320" y="370" fill="#455b46" font-family="Georgia,serif" font-size="25" text-anchor="middle">A shelf full of possibility</text>
+</svg>

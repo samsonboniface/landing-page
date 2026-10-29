@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Share feedback about the Book shop website." />
+    <title>Feedback | Book shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="bookstore auth-required">
+    <header class="site-header"><div class="container book-nav">
+      <a href="index.html" class="book-brand" aria-label="Book shop home"><span class="book-brand-icon">B</span><span>Book shop</span></a>
+      <a class="back-home" href="index.html" aria-label="Go back to the bookshop homepage"><span aria-hidden="true">←</span><span class="back-home-label">Back</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="gallery.html">Gallery</a><a href="products.html">Products</a><a href="blog.html">Blog</a><a href="team.html">Team</a><a href="feedback.html" aria-current="page">Feedback</a></nav>
+      <div class="book-nav-actions"><a class="account-link" href="login.html" hidden>Account</a><a class="bag-link" href="login.html">Login</a></div>
+    </div></header>
+    <main class="shop-page">
+      <!-- Feedback page: collects demo-only visitor comments about the bookstore site. -->
+      <section class="shop-page-hero"><p class="book-eyebrow">A note for our booksellers</p><h1>Tell us what you think.</h1><p>Your feedback helps us make this bookshop website more welcoming and easier to use.</p></section>
+      <section class="shop-content">
+        <div class="login-card feedback-card">
+          <form class="feedback-form">
+            <label><span>Your name</span><input class="input" type="text" name="name" placeholder="Your name" required /></label>
+            <label><span>Email (optional)</span><input class="input" type="email" name="email" placeholder="you@example.com" /></label>
+            <label><span>How was your visit?</span><select class="input" name="rating" required><option value="">Choose a rating</option><option value="5">Lovely — 5 stars</option><option value="4">Good — 4 stars</option><option value="3">It was okay — 3 stars</option><option value="2">Could be better — 2 stars</option><option value="1">Needs work — 1 star</option></select></label>
+            <label><span>Your feedback</span><textarea class="textarea" name="message" placeholder="Share a thought, suggestion, or book recommendation..." required></textarea></label>
+            <button class="book-button" type="submit">Share feedback <span aria-hidden="true">→</span></button>
+            <p class="form-status shop-small-note" aria-live="polite"></p>
+            <p class="shop-small-note">This demo form validates your input, but does not send or store feedback.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="book-footer"><div class="container book-footer-inner"><a href="index.html" class="book-brand"><span class="book-brand-icon">B</span><span>Book shop</span></a><p>Find a story. Make a day of it.</p><nav class="book-footer-nav" aria-label="Explore the bookshop"><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="gallery.html">Gallery</a><a href="products.html">Products</a><a href="blog.html">Blog</a><a href="team.html">Team</a><a href="feedback.html">Feedback</a><a href="login.html">Login</a></nav><span>© <span id="year"></span> Book shop</span></div></footer>
+  </body>
+</html>
